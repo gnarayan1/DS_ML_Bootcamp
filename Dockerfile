@@ -10,9 +10,15 @@ WORKDIR /home/ubuntu/
 RUN chmod a+rwx /home/ubuntu/
 #RUN echo `pwd`
 
+RUN pip install --upgrade pip
+
+RUN pip install numpy
+RUN pip install scipy
 RUN pip install pandas
 RUN pip install matplotlib
 RUN pip install seaborn
+RUN pip install scikit-learn
+
 
 # Configuring access to Jupyter
 RUN mkdir /home/ubuntu/notebooks
