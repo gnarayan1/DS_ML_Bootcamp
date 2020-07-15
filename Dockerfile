@@ -10,9 +10,9 @@ WORKDIR /home/ubuntu/
 RUN chmod a+rwx /home/ubuntu/
 #RUN echo `pwd`
 
-conda install pandas
-conda install matplotlib
-conda install seaborn
+RUN pip install pandas
+RUN pip install matplotlib
+RUN pip install seaborn
 
 # Configuring access to Jupyter
 RUN mkdir /home/ubuntu/notebooks
